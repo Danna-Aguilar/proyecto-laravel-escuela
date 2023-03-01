@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>LISTA DE ALUMNES</h1>
+    <a href="{{route('alumnos.create')}}">Crear alumno</a>
         <table>
            <thead>
             <tr>
