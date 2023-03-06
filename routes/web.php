@@ -25,3 +25,9 @@ Route::get('/alumnos/create', [AlumnosController::class, 'create'] )
 //almacenar registro
 Route::post('/alumnos', [AlumnosController::class, 'store'] )
     -> name ('alumnos.store');
+
+Route::get('/alumnos/{id}/edit)',[AlumnosController::class, 'edit'] )
+    -> name ('alumnos.edit');
+
+ Route::put('/alumnos/{id})',[AlumnosController::class, 'update'] )
+    -> name ('alumnos.update');
