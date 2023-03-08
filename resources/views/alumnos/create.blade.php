@@ -16,6 +16,14 @@
         <input type="text"name="nombre">
     </div>
     <div>
+        <label>Carera: </label>
+        <select name="carrera">
+            <option value="" selected disabled> Elige una carrera</option>
+            @foreach($carreras as $carrera)
+                <option value="{{$carrera->id}}">{{$carrera->nombre}}</option>
+            @endforeach
+
+        </select>
         <button type="sumbit"> Crear alumno</button>
     </div>
     </form>
